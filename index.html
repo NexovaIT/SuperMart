@@ -1,0 +1,66 @@
+<!//Copyright 2024 Nexnova IT Solutions>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <title>Nexova Shopping Cart (Prototype)</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+</head>
+<body>
+
+
+  <div id="login-container" class="login-container">
+    
+    <h2>NEXOVA SUPER MART</h2>
+    <div class="shopping-cart">
+      <img src="assets/images/cart.jpg" alt="Shopping Cart">
+    </div>
+    <div class="form-group">
+        <input type="text" id="username" placeholder="Enter your username">
+        <input type="text" id="phone" placeholder="Enter your phone number">
+		</br></br>
+		<button id="login-btn" type="submit">Login</button>
+    </div>
+	<h6>Powered by NEXOVA. 2024</h6>
+  </div>
+  
+  <div id="pos-system" class="hidden">
+    <header class="header">
+      <h1>NEXOVA SUPER MART</h1>
+      <div>
+        <h4 id="welcome-msg">Welcome, <span id="user-name"></span>!</h4>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="products-section">
+        <h2>Available Products</h2>
+        <div id="products" class="products-list"></div>
+      </section>
+      <section class="cart-section">
+        <h2 vertical-align="rightwards">My Shopping Cart<img src="assets/images/cart-small.jpg" alt="Shopping Cart" width="50px"> </h2>
+        <div id="cart" class="cart-list">
+          <p>Your cart is empty.</p>
+        </div>
+        <div class="cart-total">
+          <h3>Discount: $<span id="discount">0.00</span></h3>
+          <h2>Total: $<span id="total">0.00</span></h2>
+          <button id="checkout-btn">Checkout</button>
+        </div>
+      </section>
+    </main>
+    <section id="analytics" class="analytics hidden">
+      <h2>Sales Analytics</h2>
+      <p>Total Sales: $<span id="total-sales">0.00</span></p>
+      <button id="view-analytics-btn">Close Analytics</button>
+    </section>
+	<h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powered by NEXOVA. 2024</h6>
+  </div>
+  <script src="assets/js/script.js"></script>
+  
+</body>
+</html>
